@@ -46,6 +46,27 @@ class BaseViewController: UIViewController {
         println(button.titleForState(.Normal));
         navigationController?.popViewControllerAnimated(true);
     }
+    ///返回当前View X
+    func viewFramX(view:UIView) ->CGFloat{
+        return view.frame.origin.x
+    }
+    ///返回当前View Y
+    func viewFramY(view:UIView) ->CGFloat{
+        return view.frame.origin.y
+    }
+    ///返回当前View H
+    func viewFramH(view:UIView) ->CGFloat{
+        return view.frame.size.height
+    }
+    ///返回当前View W
+    func viewFramW(view:UIView) ->CGFloat{
+        return view.frame.size.width
+    }
+    ///设置色值
+    func RGBA (r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat)-> UIColor
+    {
+        return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

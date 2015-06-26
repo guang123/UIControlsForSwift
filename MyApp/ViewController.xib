@@ -16,9 +16,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GcG-oY-qMP">
-                    <rect key="frame" x="129" y="269" width="63" height="30"/>
+                    <rect key="frame" x="10" y="182" width="60" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="ModelVC">
+                    <state key="normal" title="基础控件">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -26,7 +26,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OQX-hj-BX3">
-                    <rect key="frame" x="135" y="327" width="51" height="30"/>
+                    <rect key="frame" x="112" y="182" width="51" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="FirstVC">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -36,18 +36,38 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NIv-Ue-8kf">
-                    <rect key="frame" x="124" y="383" width="73" height="30"/>
+                    <rect key="frame" x="201" y="182" width="112" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="SecondVC">
+                    <state key="normal" title="(2)手势/滚动视图">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="sectionAction:" destination="-1" eventType="touchUpInside" id="IIf-Yn-nEm"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3zG-5o-cW5">
+                    <rect key="frame" x="0.0" y="225" width="92" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="(3)日期选择器">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="thirdAction:" destination="-1" eventType="touchUpInside" id="aW3-0n-mfp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ah2-3N-759">
+                    <rect key="frame" x="106" y="225" width="62" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="(4)浏览器">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fourthAction:" destination="-1" eventType="touchUpInside" id="PUw-MG-sa8"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <point key="canvasLocation" x="283" y="358"/>
+            <point key="canvasLocation" x="-191" y="14"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

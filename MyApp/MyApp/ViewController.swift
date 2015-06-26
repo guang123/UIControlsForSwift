@@ -117,6 +117,18 @@ class ViewController: UIViewController,UITextFieldDelegate,UITextViewDelegate {
         var secondVC = SecondViewController(nibName:"SecondViewController",bundle:nil);
         navigationController?.pushViewController(secondVC, animated: true)
     }
+    
+
+    @IBAction func thirdAction(sender: AnyObject) {
+        var thirdVC = ThirdViewController(nibName:"ThirdViewController",bundle:nil)
+        navigationController?.pushViewController(thirdVC, animated: true)
+    }
+    
+    @IBAction func fourthAction(sender: AnyObject) {
+        var fourthVC = FourthViewController(nibName:"FourthViewController",bundle:nil)
+        navigationController?.pushViewController(fourthVC, animated: true)
+    }
+   
     //MARK: -私有方法
     func RGBA (r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat)-> UIColor
     {
