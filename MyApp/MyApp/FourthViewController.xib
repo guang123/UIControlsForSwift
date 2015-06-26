@@ -6,6 +6,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FourthViewController" customModule="MyApp" customModuleProvider="target">
             <connections>
+                <outlet property="mainLiftBar" destination="vD2-Bx-VUe" id="S2a-lG-oRt"/>
+                <outlet property="mainProgress" destination="5aP-FR-bpj" id="kex-0O-DoN"/>
+                <outlet property="mainReplyBar" destination="IAu-yx-fnm" id="b49-je-vDG"/>
+                <outlet property="mainStopBar" destination="j3q-w0-4mG" id="08v-oN-q2w"/>
+                <outlet property="mainWebView" destination="S1R-5R-HpU" id="0fz-Jl-SwE"/>
+                <outlet property="mainrightBar" destination="opf-hc-s3v" id="IcS-gc-f6D"/>
+                <outlet property="searchB" destination="qlP-s7-gAj" id="QoB-6b-7qu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,23 +21,32 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <webView contentMode="scaleToFill" id="S1R-5R-HpU">
-                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="Zr7-NG-rXr"/>
-                    </connections>
-                </webView>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gnw-yF-J6i">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <items>
-                        <barButtonItem image="left.png" id="vD2-Bx-VUe"/>
-                        <barButtonItem image="right.png" id="opf-hc-s3v"/>
-                        <barButtonItem systemItem="reply" id="IAu-yx-fnm"/>
+                        <barButtonItem image="left.png" id="vD2-Bx-VUe">
+                            <connections>
+                                <action selector="liftAction:" destination="-1" id="Rg6-yc-F6N"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="lTa-QZ-KbA"/>
+                        <barButtonItem image="right.png" id="opf-hc-s3v">
+                            <connections>
+                                <action selector="rightAction:" destination="-1" id="Was-oJ-2SE"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="reply" id="IAu-yx-fnm">
+                            <connections>
+                                <action selector="replyAction:" destination="-1" id="1Qn-oD-mVA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="ulj-rw-fsw"/>
                         <barButtonItem systemItem="stop" id="j3q-w0-4mG">
                             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="stopAction:" destination="-1" id="oq4-t1-T4W"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="5bn-DK-yPF"/>
                         <barButtonItem style="plain" id="pH7-9w-u87">
@@ -41,6 +57,22 @@
                         </barButtonItem>
                     </items>
                 </toolbar>
+                <searchBar contentMode="redraw" id="qlP-s7-gAj">
+                    <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="3p3-yF-ZaR"/>
+                    </connections>
+                </searchBar>
+                <webView contentMode="scaleToFill" id="S1R-5R-HpU">
+                    <rect key="frame" x="0.0" y="80" width="320" height="488"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Zr7-NG-rXr"/>
+                    </connections>
+                </webView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <point key="canvasLocation" x="444" y="340"/>
