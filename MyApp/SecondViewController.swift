@@ -19,6 +19,7 @@ class SecondViewController: BaseViewController,UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setScrollView()
+        self.title = "手势/滚动视图"
         //各种手势都是UIGestureRecognizer子类，可以实现其代理方法。对手势进行拦截
         setTopGesture()
         setMoveGesture()
@@ -127,10 +128,10 @@ class SecondViewController: BaseViewController,UIScrollViewDelegate {
         println("x:\(scrollView.contentOffset.x) y:\(scrollView.contentOffset.y)")
     }
     //缩放代理
-    func viewForZoomingInScrollView( scrollView: UIScrollView!) -> UIView!{
+    func viewForZoomingInScrollView( scrollView: UIScrollView) -> UIView?{
         for subview : AnyObject in scrollView.subviews {
             if subview.isKindOfClass(UIImageView) {
-                return subview as UIView
+                return subview as? UIView
             }
         }
         return nil

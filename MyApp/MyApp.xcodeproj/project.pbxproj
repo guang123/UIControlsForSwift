@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F762F4081B3FFD1000821F09 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F762F4061B3FFD1000821F09 /* FifthViewController.swift */; };
+		F762F4091B3FFD1000821F09 /* FifthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F762F4071B3FFD1000821F09 /* FifthViewController.xib */; };
+		F762F40B1B402A7F00821F09 /* tableData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F762F40A1B402A7F00821F09 /* tableData.plist */; };
+		F762F40E1B40357B00821F09 /* SixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F762F40C1B40357B00821F09 /* SixthViewController.swift */; };
+		F762F40F1B40357B00821F09 /* SixthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F762F40D1B40357B00821F09 /* SixthViewController.xib */; };
+		F762F4121B403E3600821F09 /* SixthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F762F4101B403E3600821F09 /* SixthCollectionViewCell.swift */; };
+		F762F4131B403E3600821F09 /* SixthCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F762F4111B403E3600821F09 /* SixthCollectionViewCell.xib */; };
 		FA7C49041B3CEFCF007087FF /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C49021B3CEFCF007087FF /* ThirdViewController.swift */; };
 		FA7C49051B3CEFCF007087FF /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7C49031B3CEFCF007087FF /* ThirdViewController.xib */; };
 		FA7C49081B3CF734007087FF /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C49061B3CF734007087FF /* FourthViewController.swift */; };
@@ -46,6 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F762F4061B3FFD1000821F09 /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		F762F4071B3FFD1000821F09 /* FifthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FifthViewController.xib; sourceTree = "<group>"; };
+		F762F40A1B402A7F00821F09 /* tableData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tableData.plist; sourceTree = "<group>"; };
+		F762F40C1B40357B00821F09 /* SixthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixthViewController.swift; sourceTree = "<group>"; };
+		F762F40D1B40357B00821F09 /* SixthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SixthViewController.xib; sourceTree = "<group>"; };
+		F762F4101B403E3600821F09 /* SixthCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixthCollectionViewCell.swift; sourceTree = "<group>"; };
+		F762F4111B403E3600821F09 /* SixthCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SixthCollectionViewCell.xib; sourceTree = "<group>"; };
 		FA7C49021B3CEFCF007087FF /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		FA7C49031B3CEFCF007087FF /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
 		FA7C49061B3CF734007087FF /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +162,12 @@
 				FA7C49031B3CEFCF007087FF /* ThirdViewController.xib */,
 				FA7C49061B3CF734007087FF /* FourthViewController.swift */,
 				FA7C49071B3CF734007087FF /* FourthViewController.xib */,
+				F762F4061B3FFD1000821F09 /* FifthViewController.swift */,
+				F762F4071B3FFD1000821F09 /* FifthViewController.xib */,
+				F762F40C1B40357B00821F09 /* SixthViewController.swift */,
+				F762F40D1B40357B00821F09 /* SixthViewController.xib */,
+				F762F4101B403E3600821F09 /* SixthCollectionViewCell.swift */,
+				F762F4111B403E3600821F09 /* SixthCollectionViewCell.xib */,
 				FADFC12B1B3A7B420042A5D8 /* Images.xcassets */,
 				FADFC12D1B3A7B420042A5D8 /* LaunchScreen.xib */,
 				FADFC1221B3A7B420042A5D8 /* Supporting Files */,
@@ -158,6 +178,7 @@
 		FADFC1221B3A7B420042A5D8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F762F40A1B402A7F00821F09 /* tableData.plist */,
 				FADFC1231B3A7B420042A5D8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -260,6 +281,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F762F4131B403E3600821F09 /* SixthCollectionViewCell.xib in Resources */,
+				F762F40B1B402A7F00821F09 /* tableData.plist in Resources */,
 				FADEA0CC1B3BD45C001A8874 /* add.png in Resources */,
 				FADEA0D51B3BFFC2001A8874 /* about_ourself_bg.png in Resources */,
 				FADFC14D1B3A812B0042A5D8 /* ModalViewController.xib in Resources */,
@@ -270,6 +293,7 @@
 				FADFC12F1B3A7B420042A5D8 /* LaunchScreen.xib in Resources */,
 				FADFC1531B3A8B430042A5D8 /* nonaml_btn.png in Resources */,
 				FADEA0C81B3BCCC8001A8874 /* 5.png in Resources */,
+				F762F4091B3FFD1000821F09 /* FifthViewController.xib in Resources */,
 				FA7C490F1B3CF9F8007087FF /* remove.png in Resources */,
 				FA7C490E1B3CF9F8007087FF /* right.png in Resources */,
 				FADEA0D11B3BF912001A8874 /* SecondViewController.xib in Resources */,
@@ -277,6 +301,7 @@
 				FA7C49051B3CEFCF007087FF /* ThirdViewController.xib in Resources */,
 				FADFC12C1B3A7B420042A5D8 /* Images.xcassets in Resources */,
 				FADFC1491B3A7D980042A5D8 /* ViewController.xib in Resources */,
+				F762F40F1B40357B00821F09 /* SixthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F762F4081B3FFD1000821F09 /* FifthViewController.swift in Sources */,
 				FADFC1271B3A7B420042A5D8 /* ViewController.swift in Sources */,
 				FADFC14C1B3A812B0042A5D8 /* ModalViewController.swift in Sources */,
 				FADFC1251B3A7B420042A5D8 /* AppDelegate.swift in Sources */,
@@ -301,7 +327,9 @@
 				FA7C49081B3CF734007087FF /* FourthViewController.swift in Sources */,
 				FADEA0D01B3BF912001A8874 /* SecondViewController.swift in Sources */,
 				FADFC1501B3A84DD0042A5D8 /* FirstViewController.swift in Sources */,
+				F762F4121B403E3600821F09 /* SixthCollectionViewCell.swift in Sources */,
 				FADEA0D31B3BF951001A8874 /* BaseViewController.swift in Sources */,
+				F762F40E1B40357B00821F09 /* SixthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -129,6 +129,14 @@ class ViewController: UIViewController,UITextFieldDelegate,UITextViewDelegate {
         navigationController?.pushViewController(fourthVC, animated: true)
     }
    
+    @IBAction func fifthAction(sender: AnyObject) {
+        var fitthVC = FifthViewController(nibName:"FifthViewController", bundle:nil)
+        navigationController?.pushViewController(fitthVC, animated: true)
+    }
+    @IBAction func sixthAction(sender: AnyObject) {
+        var sixthVC = SixthViewController(nibName:"SixthViewController", bundle:nil)
+        navigationController?.pushViewController(sixthVC, animated: true)
+    }
     //MARK: -私有方法
     func RGBA (r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat)-> UIColor
     {
@@ -139,7 +147,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITextViewDelegate {
         var mail = UIMenuItem(title: "邮件", action: "onMail")
         var weixin = UIMenuItem(title: "微信", action: "onWeiXin")
         var menu = UIMenuController()
-        menu.menuItems = NSArray(array: [mail,weixin])
+        menu.menuItems = NSArray(array: [mail,weixin]) as [AnyObject]
     }
     
     func onMail(){

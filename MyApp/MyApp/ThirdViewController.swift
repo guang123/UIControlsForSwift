@@ -14,6 +14,7 @@ class ThirdViewController: BaseViewController {
     @IBOutlet var datePicker: UIDatePicker!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "时间选择器"
         datePicker.setDate(NSDate(), animated: true)
         datePicker.minimumDate = NSDate()//最小时间
         datePicker.timeZone = NSTimeZone(name: "GMT")//时区
